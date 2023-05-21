@@ -7,28 +7,20 @@ function App() {
   const columns = React.useMemo(
     () => [
       {
-        Header: "ID",
-        accessor: "id",
-      },
-      {
-        Header: "First Name",
+        Header: "",
         accessor: "first_name",
       },
       {
-        Header: "Last Name",
+        Header: "P",
         accessor: "last_name",
       },
       {
-        Header: "Email",
+        Header: "W",
         accessor: "email",
       },
       {
-        Header: "Gender",
+        Header: "L",
         accessor: "gender",
-      },
-      {
-        Header: "University",
-        accessor: "university",
       },
     ],
     []
@@ -38,14 +30,15 @@ function App() {
     useTable({ columns, data });
 
   return (
-    <div className="App">
-      <div className="container">
+    <div className="bg-white text-primary-color mt-10 pl-5 pt-5 pb-5 rounded-xl">
+      <h1>IPL STATS</h1>
+      <div className="">
         <table {...getTableProps()}>
-          <thead>
+          <thead className="">
             {headerGroups.map((headerGroup) => (
-              <tr {...headerGroup.getHeaderGroupProps()}>
+              <tr  {...headerGroup.getHeaderGroupProps()}>
                 {headerGroup.headers.map((column) => (
-                  <th {...column.getHeaderProps()}>
+                  <th className="pr-10 " {...column.getHeaderProps()}>
                     {column.render("Header")}
                   </th>
                 ))}
@@ -56,9 +49,9 @@ function App() {
             {rows.map((row) => {
               prepareRow(row);
               return (
-                <tr {...row.getRowProps()}>
+                <tr className="pr-10 font-semibold text-lg" {...row.getRowProps()}>
                   {row.cells.map((cell) => (
-                    <td {...cell.getCellProps()}> {cell.render("Cell")} </td>
+                    <td className="pr-10" {...cell.getCellProps()}> {cell.render("Cell")} </td>
                   ))}
                 </tr>
               );

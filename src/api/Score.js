@@ -20,7 +20,6 @@
 //   }
 // };
 
-const API_KEY = "qZnM0O90ToIjBiq9GvT9382";
 
 export const getMatches = async () => {
   const url =
@@ -33,15 +32,7 @@ export const getMatches = async () => {
     const keywords = [
       "Kolkata",
     ];
-    const keyword2 = [
-      "Chennai",
-      "Punjab",
-      "Delhi",
-      "Mumbai",
-      "Bangalore",
-      "Hyderabad",
-      "Rajasthan"
-    ]
+
     const ipl = [];
     for (const r of data.data) {
       const match = r.name.split(" ");
@@ -54,3 +45,4 @@ export const getMatches = async () => {
     console.log("ERROR", error);
   }
 };
+

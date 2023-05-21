@@ -1,0 +1,99 @@
+*
+{
+    padding:0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+    background-color: #1e1e1e;
+    color:#e9ffaa;
+}
+
+.landing
+{
+    height:1100px;;
+}
+
+.aboutphrase
+{
+    height:100px;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    text-align:center;
+
+
+}
+.aboutphrase p
+{
+    font-weight: 800;
+    font-size:100px;
+    padding-bottom:18px;
+    
+}
+#aboutbtn
+{
+    background-color: #e9ffaa;
+    color:#0B0617;
+    padding:14px 36px 14px 36px;
+    border-radius:5.38072px;
+    width:228px;
+    height:53px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.aboutus
+{
+    height:500px;
+    margin-left:25px;
+}
+.aboutheading
+{
+    text-align:left;
+    font-weight: 600;
+    line-height: 68px;
+    font-size: 68px;
+    text-decoration-line: underline;
+}
+.aboutpara
+{
+    padding-top:69px;
+    font-weight: 400;
+    font-size: 27.2px;
+    line-height: 36.96px;
+    width:1179px;
+    height:259px;
+}
+
+.founder
+{
+    height:500px;
+    margin-left:25px;
+    margin-right:25px;
+}
+.founderheading
+{
+    text-align:right;
+    font-weight: 600;
+    line-height: 68px;
+    font-size: 68px;
+    text-decoration-line: underline;
+    position:relative;
+    
+}
+
+.founderpara
+{
+    padding-top:69px;
+    font-weight: 400;
+    font-size: 27.2px;
+    line-height: 36.96px;
+    height:259px;
+    text-align: right;
+    float:right;
+    width:957px;
+}

@@ -43,15 +43,23 @@
 //     "matchStarted": true,
 //     "matchEnded": true
 //   }
+import {Link} from 'react-router-dom'
 const Card = ({ matchDetails }) => {
   const { name, status, venue } = matchDetails
   return (
-      <div className="">
-          <h2>{name}</h2>
-          <p>{status}</p>
-          <p>{venue}</p>
-
+      <>
+      <div className="bg-white max-w-6xl m-auto mt-10 rounded-lg flex justify-center items-center flex-col text-black h-44 " >
+        <h2 className="text-center font-bold text-2xl text-[#6333D7]">{name}</h2>
+        <p className="font-semibold text-lg">{status}</p>
+        <p className="font-medium text-primary-color">{venue}</p>
       </div>
+      <div>
+        <Link to="/yes" className='mt-5 underline font-semibold text-sec-color'>See More Fixtures</Link>
+      </div>
+      </>
+
+      
+
   )
 }
 
