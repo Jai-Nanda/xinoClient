@@ -1,13 +1,15 @@
 import React from 'react'
 import '../pages/Home.css'
+import nice from '../images/home_img.png'
 export default function Jai() {
   return (
     <div>
       <div class="landing">
     <div class="aboutphrase">
         <p>IPL 2023 SEASON</p>
-        <button id="aboutbtn">BOOK TICKETS</button>
-        <img src="stadium3d.png"/>
+        <button id="aboutbtn" >BOOK TICKETS</button>
+        <br />
+        <img src={nice} className='ml-96'/>
     </div>
 </div>
 <div class="aboutus">

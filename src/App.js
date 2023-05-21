@@ -9,6 +9,7 @@ import Navbar from './components/Navbar'
 import Analytics from './pages/Analytics'
 import Register from './pages/Register'
 import Yes from './pages/Yes'
+import Store from './pages/Store'
 const App = () => {
 	return (
 		<div>
@@ -21,6 +22,7 @@ const App = () => {
 				<Route path="/analytics" element={<Analytics/>} />
 				<Route path="/login" element={<Login/>} />
 				<Route path="/yes" element={<Yes/>} />
+				<Route path="/store" element={<Store/>} />
 			</Routes>
 			<Footer></Footer>
 

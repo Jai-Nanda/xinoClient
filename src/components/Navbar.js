@@ -60,6 +60,7 @@ const Navbar = () => {
             
           ))}
           </ul>
+          
           {!cookies.access_token ? (
             <div>
         <Link to="/login">Login</Link>
@@ -67,8 +68,8 @@ const Navbar = () => {
         </div>
       ) : (
         <button onClick={logout}> Logout </button>
-      )}
-          <button type='button'>YO</button>
+      )}  
+      
         {/* Mobile Button */}
       </div>
     </div>
