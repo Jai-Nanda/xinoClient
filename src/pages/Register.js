@@ -3,71 +3,66 @@ import axios from "axios";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 import hey from '../images/auth.png'
-const Login = () => {
-    const [_, setCookies] = useCookies(["access_token"]);
-  
+const Register = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
   
+    const [_, setCookies] = useCookies(["access_token"]);
     const navigate = useNavigate();
   
     const handleSubmit = async (event) => {
       event.preventDefault();
-  
       try {
-        const result = await axios.post("http://localhost:3001/auth/login", {
+        await axios.post("http://localhost:3001/auth/register", {
           username,
           password,
         });
-  
-        setCookies("access_token", result.data.token);
-        window.localStorage.setItem("userID", result.data.userID);
-        navigate("/");
+        alert("Registration Completed! Now login.");
       } catch (error) {
         console.error(error);
       }
     };
   
     return (
-    //   <div className="auth-container">
-    //     <form onSubmit={handleSubmit}>
-    //       <h2>Login</h2>
-    //       <div className="form-group">
-    //         <label htmlhtmlFor="username">Username:</label>
-    //         <input
-    //           type="text"
-    //           id="username"
-    //           value={username}
-    //           onChange={(event) => setUsername(event.target.value)}
-    //         />
-    //       </div>
-    //       <div className="form-group">
-    //         <label htmlhtmlFor="password">Password:</label>
-    //         <input
-    //           type="password"
-    //           id="password"
-    //           value={password}
-    //           onChange={(event) => setPassword(event.target.value)}
-    //         />
-    //       </div>
-    //       <button type="submit">Login</button>
-    //     </form>
-    //   </div>
-    <div className="bg-primary-color flex items-center min-h-[90vh] p-4  lg:justify-center">
+      // <div className="auth-container">
+      //   <form onSubmit={handleSubmit}>
+      //     <h2>Register</h2>
+      //     <div className="form-group">
+      //       <label htmlFor="username">Username:</label>
+      //       <input
+      //         type="text"
+      //         id="username"
+      //         value={username}
+      //         onChange={(event) => setUsername(event.target.value)}
+      //       />
+      //     </div>
+      //     <div className="form-group">
+      //       <label htmlFor="password">Password:</label>
+      //       <input
+      //         type="password"
+      //         id="password"
+      //         value={password}
+      //         onChange={(event) => setPassword(event.target.value)}
+      //       />
+      //     </div>
+      //     <button type="submit">Register</button>
+      //   </form>
+      // </div>
+      <div className="bg-primary-color flex items-center min-h-[90vh] p-4  lg:justify-center">
       <div
         className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md"
       >
         <img src={hey} alt="hi" className="w-[430px] h-[500p]"/>
         <div className="p-5 bg-white md:flex-1">
-          <h3 className="my-4 text-2xl font-semibold text-gray-700">Account Login</h3>
+          <h3 className="my-4 text-2xl font-semibold text-gray-700">Account Register</h3>
           <form onSubmit={handleSubmit} className="flex flex-col space-y-5">
             <div className="flex flex-col space-y-1">
               <label htmlFor="email" className="text-sm font-semibold text-gray-500">Email address</label>
               <input
                type="text"
-                 id="username"
-                          value={username}
-                          onChange={(event) => setUsername(event.target.value)}
+                       id="username"
+                       value={username}
+                      onChange={(event) => setUsername(event.target.value)}
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -78,9 +73,9 @@ const Login = () => {
               </div>
               <input
                  type="password"
-                           id="password"
-                            value={password}
-                            onChange={(event) => setPassword(event.target.value)}
+                       id="password"
+                 value={password}
+                        onChange={(event) => setPassword(event.target.value)}
                 className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
               />
             </div>
@@ -110,4 +105,4 @@ const Login = () => {
     </div>
     );
   };
-  export default Login
+  export default Register

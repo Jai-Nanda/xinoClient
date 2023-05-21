@@ -9,7 +9,7 @@ const Navbar = () => {
   const logout = () => {
     setCookies("access_token", "");
     window.localStorage.clear();
-    navigate("/auth");
+    navigate("/");
   }
   const Links = [
     {
@@ -18,42 +18,27 @@ const Navbar = () => {
       pname: "home"
     },
     {
-      label: "NEWS",
-      path: "/news",
-      pname: "news"
+      label: "Analytics",
+      path: "/analytics",
+      pname: "analytics"
     },
     {
-      label: "EVENTS",
-      path: "/events",
-      pname: "events"
+      label: "STORE",
+      path: "/store",
+      pname: "store"
     },
     {
-      label: "RESOURCES",
-      path: "/resources",
-      pname: "resources"
-    },
-    {
-      label: "THE TEAM",
-      path: "/team",
-      pname: "team"
-    },
-    {
-      label: "CONTACT",
-      path: "/contact",
-      pname: "contact"
-    },
-    {
-      label: "GALLERY",
-      path: "/gallery",
-      pname: "gallery"
-    },
+      label: "BOOKINGS",
+      path: "/bookings",
+      pname: "bookings"
+    }
   ]
 
 
   return (
     <div
       
-      className=' sticky  left-0 top-0 w-full z-10 ease-in  duration-300  pb-2 transition-all'
+      className='bg-primary-color text-white  left-0 top-0 w-full z-10 ease-in  duration-300  pb-2 transition-all'
     >
       <div className='max-w-7xl m-auto flex justify-between items-center pt-5 '>
         <Link to='/' className="ml-10 sm:ml-0">
@@ -76,7 +61,10 @@ const Navbar = () => {
           ))}
           </ul>
           {!cookies.access_token ? (
-        <Link to="/auth">Login/Register</Link>
+            <div>
+        <Link to="/login">Login</Link>
+        <Link to="/register" className='ml-5'>Register</Link>
+        </div>
       ) : (
         <button onClick={logout}> Logout </button>
       )}
