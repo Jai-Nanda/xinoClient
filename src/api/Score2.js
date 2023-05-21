@@ -1,6 +1,6 @@
 export const getMatches = async () => {
     const url =
-      "https://api.cricapi.com/v1/currentMatches?apikey=6516a923-2076-42ce-8000-2551ffd925d8&offset=0";
+      "https://api.cricapi.com/v1/currentMatches?apikey=df200008-ec3f-4ff7-bff1-6e45fcae6797&offset=0";
     console.log("URL", url);
     try {
       const response = await fetch(url);
