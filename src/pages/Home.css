@@ -32,8 +32,9 @@ body {
 .aboutphrase p
 {
     font-weight: 800;
-    font-size:6vw;
+    font-size:3.7vw;
     padding-bottom:18px;
+    margin-top: 50px;
     
 }
 #aboutbtn {
@@ -97,4 +98,9 @@ body {
     height:259px;
     text-align: right;
     float: right;
+}
+.jai{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -2,6 +2,7 @@ import { Turn as Hamburger, Turn } from 'hamburger-react'
 import { Link, useNavigate } from 'react-router-dom'
 import logo from '../images/logo.png'
 import { useCookies } from "react-cookie";
+import okay from '../images/okay.png'
 const Navbar = () => {
     const [cookies, setCookies] = useCookies(["access_token"]);
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const Navbar = () => {
       pname: "home"
     },
     {
-      label: "Analytics",
+      label: "ANALYTICS",
       path: "/analytics",
       pname: "analytics"
     },
@@ -26,11 +27,6 @@ const Navbar = () => {
       label: "STORE",
       path: "/store",
       pname: "store"
-    },
-    {
-      label: "BOOKINGS",
-      path: "/bookings",
-      pname: "bookings"
     }
   ]
 
@@ -60,15 +56,17 @@ const Navbar = () => {
             
           ))}
           </ul>
+          <button className='bg-[#D1BEFF] h-10 w-32 rounded-lg text-[#0B0617]'>IPL<span className='font-bold'>ARC</span></button>
           
-          {!cookies.access_token ? (
+          {/* {!cookies.access_token ? (
             <div>
         <Link to="/login">Login</Link>
         <Link to="/register" className='ml-5'>Register</Link>
         </div>
       ) : (
         <button onClick={logout}> Logout </button>
-      )}  
+      )}   */}
+      <img src={okay} alt="" />
       
         {/* Mobile Button */}
       </div>

@@ -9,7 +9,7 @@ export default function Jai() {
         <p>IPL 2023 SEASON</p>
         <button id="aboutbtn" >BOOK TICKETS</button>
         <br />
-        <img src={nice} className='ml-96'/>
+        <img src={nice} className='jai'/>
     </div>
 </div>
 <div class="aboutus">

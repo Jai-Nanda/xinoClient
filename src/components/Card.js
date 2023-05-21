@@ -53,8 +53,8 @@ const Card = ({ matchDetails }) => {
         <p className="font-semibold text-lg">{status}</p>
         <p className="font-medium text-primary-color">{venue}</p>
       </div>
-      <div>
-        <Link to="/yes" className='mt-5 underline font-semibold text-sec-color'>See More Fixtures</Link>
+      <div className='mt-5'>
+        <Link to="/yes" className='pt-10 underline font-semibold text-sec-color font-lg'>See More Fixtures</Link>
       </div>
       </>
 
