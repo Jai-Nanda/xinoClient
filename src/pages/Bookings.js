@@ -1,5 +1,6 @@
-import React from 'react'
-
+import React from 'react' 
+import {HiOutlineOfficeBuilding} from 'react-icons/hi'
+import {BsFillCalendarCheckFill,BsFillPeopleFill} from 'react-icons/bs'
 export default function Bookings() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Bookings() {
                 <div className='p-[10px] flex justify-start items-center'>
                     {/* <img src="festival.png" alt="coming"/>&nbsp;<span>Venue</span> */}
                     {/* <img src="" alt="yo"><span></span></img> */}
+                    <HiOutlineOfficeBuilding> <span>Venue</span> </HiOutlineOfficeBuilding>
                 </div>
                 {/* <div style={{"position:relative;top:30%;left:10%;color:#A1A1A1"> */}
                 <div className='relative top-[30%] left-[10%] text-[#A1A1A1]'>
@@ -35,7 +37,7 @@ export default function Bookings() {
                 <div className="p-[10px] flex justify-start items-center">
                     {/* // <img src="diversity_3.png" alt="coming"/><span>People</span> */}
                 </div>
-                <div style={{position: "relative",top:"30%",left:"10%",color:"#A1A1A1"}}>
+                <div style={{position: "relative",top:"30%",left:"10%",color:"#A1A1A1"}} className='w-60'>
                     <p>No. of people coming</p>
                 </div>
             </div>
@@ -44,7 +46,7 @@ export default function Bookings() {
     </div>
     <div style={{Width:"100%",height:"50px"}}></div>
     <div style={{Position:"relative",left:"8%"}}>
-        <p style={{fontWeight: "400",fontSize: "10vh"}}>SEATS</p>
+        <p style={{fontWeight: "400",fontSize: "10vh"}} className=' text-center'>SEATS</p>
     </div>
     
     <div style={{height:"300px", margin:"90px"}}>
@@ -73,285 +75,6 @@ export default function Bookings() {
                 <button style={{Width:"36px",height:"36px"}}>A15</button>
             </div>
             </div>
-           <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-                <p style={{Fontsize: "25px", marginTop:"10px"}} > A LOWER</p>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A1</button>
-                    <button style={{Width:"36px",height:"36px"}}>A2</button>
-                    <button style={{Width:"36px",height:"36px"}}>A3</button>
-                    <button style={{Width:"36px",height:"36px"}}>A4</button>
-                    <button style={{Width:"36px",height:"36px"}}>A5</button>
-                </div>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A6</button>
-                    <button style={{Width:"36px",height:"36px"}}>A7</button>
-                    <button style={{Width:"36px",height:"36px"}}>A8</button>
-                    <button style={{Width:"36px",height:"36px"}}>A9</button>
-                    <button style={{Width:"36px",height:"36px"}}>A10</button>
-                </div>
-                <div >
-                    <button style={{Width:"36px",height:"36px"}}>A11</button>
-                    <button style={{Width:"36px",height:"36px"}}>A12</button>
-                    <button style={{Width:"36px",height:"36px"}}>A13</button>
-                    <button style={{Width:"36px",height:"36px"}}>A14</button>
-                    <button style={{Width:"36px",height:"36px"}}>A15</button>
-                </div>
-                </div>
-                //<div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-                <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>   
-                <p style={{Fontsize: "25px",marginTop:"10px"}}>B UPPER</p>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A1</button>
-                        <button style={{Width:"36px",height:"36px"}}>A2</button>
-                        <button style={{Width:"36px",height:"36px"}}>A3</button>
-                        <button style={{Width:"36px",height:"36px"}}>A4</button>
-                        <button style={{Width:"36px",height:"36px"}}>A5</button>
-                    </div>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A6</button>
-                        <button style={{Width:"36px",height:"36px"}}>A7</button>
-                        <button style={{Width:"36px",height:"36px"}}>A8</button>
-                        <button style={{Width:"36px",height:"36px"}}>A9</button>
-                        <button style={{Width:"36px",height:"36px"}}>A10</button>
-                    </div>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A11</button>
-                        <button style={{Width:"36px",height:"36px"}}>A12</button>
-                        <button style={{Width:"36px",height:"36px"}}>A13</button>
-                        <button style={{Width:"36px",height:"36px"}}>A14</button>
-                        <button style={{Width:"36px",height:"36px"}}>A15</button>
-                    </div>
-                    </div>
-                </div>
-    </div>
-
-    <div style={{height: "300px",marginTop:"90px"}}>
-        <div className=' w-[100%] flex  justify-around items-center h-[100%]'>
-           <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-            <p style={{Fontsize: "25px", marginTop:"10px"}}>B LOWER</p>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A1</button>
-                <button style={{Width:"36px",height:"36px"}}>A2</button>
-                <button style={{Width:"36px",height:"36px"}}>A3</button>
-                <button style={{Width:"36px",height:"36px"}}>A4</button>
-                <button style={{Width:"36px",height:"36px"}}>A5</button>
-            </div>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A6</button>
-                <button style={{Width:"36px",height:"36px"}}>A7</button>
-                <button style={{Width:"36px",height:"36px"}}>A8</button>
-                <button style={{Width:"36px",height:"36px"}}>A9</button>
-                <button style={{Width:"36px",height:"36px"}}>A10</button>
-            </div>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A11</button>
-                <button style={{Width:"36px",height:"36px"}}>A12</button>
-                <button style={{Width:"36px",height:"36px"}}>A13</button>
-                <button style={{Width:"36px",height:"36px"}}>A14</button>
-                <button style={{Width:"36px",height:"36px"}}>A15</button>
-            </div>
-            </div>
-           <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-                <p style={{Fontsize: "25px", marginTop:"10px"}}>C UPPER</p>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A1</button>
-                    <button style={{Width:"36px",height:"36px"}}>A2</button>
-                    <button style={{Width:"36px",height:"36px"}}>A3</button>
-                    <button style={{Width:"36px",height:"36px"}}>A4</button>
-                    <button style={{Width:"36px",height:"36px"}}>A5</button>
-                </div>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A6</button>
-                    <button style={{Width:"36px",height:"36px"}}>A7</button>
-                    <button style={{Width:"36px",height:"36px"}}>A8</button>
-                    <button style={{Width:"36px",height:"36px"}}>A9</button>
-                    <button style={{Width:"36px",height:"36px"}}>A10</button>
-                </div>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A11</button>
-                    <button style={{Width:"36px",height:"36px"}}>A12</button>
-                    <button style={{Width:"36px",height:"36px"}}>A13</button>
-                    <button style={{Width:"36px",height:"36px"}}>A14</button>
-                    <button style={{Width:"36px",height:"36px"}}>A15</button>
-                </div>
-                </div>
-               <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-                    <p style={{Fontsize: "25px", marginTop:"10px"}}>C LOWER</p>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A1</button>
-                        <button style={{Width:"36px",height:"36px"}}>A2</button>
-                        <button style={{Width:"36px",height:"36px"}}>A3</button>
-                        <button style={{Width:"36px",height:"36px"}}>A4</button>
-                        <button style={{Width:"36px",height:"36px"}}>A5</button>
-                    </div>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A6</button>
-                        <button style={{Width:"36px",height:"36px"}}>A7</button>
-                        <button style={{Width:"36px",height:"36px"}}>A8</button>
-                        <button style={{Width:"36px",height:"36px"}}>A9</button>
-                        <button style={{Width:"36px",height:"36px"}}>A10</button>
-                    </div>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A11</button>
-                        <button style={{Width:"36px",height:"36px"}}>A12</button>
-                        <button style={{Width:"36px",height:"36px"}}>A13</button>
-                        <button style={{Width:"36px",height:"36px"}}>A14</button>
-                        <button style={{Width:"36px",height:"36px"}}>A15</button>
-                    </div>
-                    </div>
-                </div>
-    </div>
-    <div style={{height: "300px",marginTop:"90px"}}>
-        <div className=' w-[100%] flex  justify-around items-center h-[100%]'>
-           <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-            <p style={{Fontsize: "25px", marginTop:"10px"}}>D UPPER</p>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A1</button>
-                <button style={{Width:"36px",height:"36px"}}>A2</button>
-                <button style={{Width:"36px",height:"36px"}}>A3</button>
-                <button style={{Width:"36px",height:"36px"}}>A4</button>
-                <button style={{Width:"36px",height:"36px"}}>A5</button>
-            </div>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A6</button>
-                <button style={{Width:"36px",height:"36px"}}>A7</button>
-                <button style={{Width:"36px",height:"36px"}}>A8</button>
-                <button style={{Width:"36px",height:"36px"}}>A9</button>
-                <button style={{Width:"36px",height:"36px"}}>A10</button>
-            </div>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A11</button>
-                <button style={{Width:"36px",height:"36px"}}>A12</button>
-                <button style={{Width:"36px",height:"36px"}}>A13</button>
-                <button style={{Width:"36px",height:"36px"}}>A14</button>
-                <button style={{Width:"36px",height:"36px"}}>A15</button>
-            </div>
-            </div>
-           <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-                <p style={{Fontsize: "25px", marginTop:"10px"}}>D LOWER</p>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A1</button>
-                    <button style={{Width:"36px",height:"36px"}}>A2</button>
-                    <button style={{Width:"36px",height:"36px"}}>A3</button>
-                    <button style={{Width:"36px",height:"36px"}}>A4</button>
-                    <button style={{Width:"36px",height:"36px"}}>A5</button>
-                </div>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A6</button>
-                    <button style={{Width:"36px",height:"36px"}}>A7</button>
-                    <button style={{Width:"36px",height:"36px"}}>A8</button>
-                    <button style={{Width:"36px",height:"36px"}}>A9</button>
-                    <button style={{Width:"36px",height:"36px"}}>A10</button>
-                </div>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A11</button>
-                    <button style={{Width:"36px",height:"36px"}}>A12</button>
-                    <button style={{Width:"36px",height:"36px"}}>A13</button>
-                    <button style={{Width:"36px",height:"36px"}}>A14</button>
-                    <button style={{Width:"36px",height:"36px"}}>A15</button>
-                </div>
-                </div>
-               <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-                    <p style={{Fontsize: "25px", marginTop:"10px"}}>E UPPER</p>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A1</button>
-                        <button style={{Width:"36px",height:"36px"}}>A2</button>
-                        <button style={{Width:"36px",height:"36px"}}>A3</button>
-                        <button style={{Width:"36px",height:"36px"}}>A4</button>
-                        <button style={{Width:"36px",height:"36px"}}>A5</button>
-                    </div>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A6</button>
-                        <button style={{Width:"36px",height:"36px"}}>A7</button>
-                        <button style={{Width:"36px",height:"36px"}}>A8</button>
-                        <button style={{Width:"36px",height:"36px"}}>A9</button>
-                        <button style={{Width:"36px",height:"36px"}}>A10</button>
-                    </div>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A11</button>
-                        <button style={{Width:"36px",height:"36px"}}>A12</button>
-                        <button style={{Width:"36px",height:"36px"}}>A13</button>
-                        <button style={{Width:"36px",height:"36px"}}>A14</button>
-                        <button style={{Width:"36px",height:"36px"}}>A15</button>
-                    </div>
-                    </div>
-                </div>
-    </div>
-    <div style={{height: "300px",marginTop:"90px"}}>
-        <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-           <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-            <p style={{Fontsize: "25px", marginTop:"10px"}}>E LOWER</p>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A1</button>
-                <button style={{Width:"36px",height:"36px"}}>A2</button>
-                <button style={{Width:"36px",height:"36px"}}>A3</button>
-                <button style={{Width:"36px",height:"36px"}}>A4</button>
-                <button style={{Width:"36px",height:"36px"}}>A5</button>
-            </div>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A6</button>
-                <button style={{Width:"36px",height:"36px"}}>A7</button>
-                <button style={{Width:"36px",height:"36px"}}>A8</button>
-                <button style={{Width:"36px",height:"36px"}}>A9</button>
-                <button style={{Width:"36px",height:"36px"}}>A10</button>
-            </div>
-            <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                <button style={{Width:"36px",height:"36px"}}>A11</button>
-                <button style={{Width:"36px",height:"36px"}}>A12</button>
-                <button style={{Width:"36px",height:"36px"}}>A13</button>
-                <button style={{Width:"36px",height:"36px"}}>A14</button>
-                <button style={{Width:"36px",height:"36px"}}>A15</button>
-            </div>
-            </div>
-           <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-                <p style={{Fontsize: "25px", marginTop:"10px"}}>VIP BOX</p>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A1</button>
-                    <button style={{Width:"36px",height:"36px"}}>A2</button>
-                    <button style={{Width:"36px",height:"36px"}}>A3</button>
-                    <button style={{Width:"36px",height:"36px"}}>A4</button>
-                    <button style={{Width:"36px",height:"36px"}}>A5</button>
-                </div>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A6</button>
-                    <button style={{Width:"36px",height:"36px"}}>A7</button>
-                    <button style={{Width:"36px",height:"36px"}}>A8</button>
-                    <button style={{Width:"36px",height:"36px"}}>A9</button>
-                    <button style={{Width:"36px",height:"36px"}}>A10</button>
-                </div>
-                <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                    <button style={{Width:"36px",height:"36px"}}>A11</button>
-                    <button style={{Width:"36px",height:"36px"}}>A12</button>
-                    <button style={{Width:"36px",height:"36px"}}>A13</button>
-                    <button style={{Width:"36px",height:"36px"}}>A14</button>
-                    <button style={{Width:"36px",height:"36px"}}>A15</button>
-                </div>
-                </div>
-               <div className='h-[100%] bg-[#D1BEFF] w-[30%] text-black rounded-lg block justify-around items-center text-center'>
-                    <p style={{Fontsize: "25px", marginTop:"10px"}}>TERRACE</p>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A1</button>
-                        <button style={{Width:"36px",height:"36px"}}>A2</button>
-                        <button style={{Width:"36px",height:"36px"}}>A3</button>
-                        <button style={{Width:"36px",height:"36px"}}>A4</button>
-                        <button style={{Width:"36px",height:"36px"}}>A5</button>
-                    </div>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A6</button>
-                        <button style={{Width:"36px",height:"36px"}}>A7</button>
-                        <button style={{Width:"36px",height:"36px"}}>A8</button>
-                        <button style={{Width:"36px",height:"36px"}}>A9</button>
-                        <button style={{Width:"36px",height:"36px"}}>A10</button>
-                    </div>
-                    <div className='p-[5px] h-[20%] m-auto w-[80%] flex justify-evenly items-center'>
-                        <button style={{Width:"36px",height:"36px"}}>A11</button>
-                        <button style={{Width:"36px",height:"36px"}}>A12</button>
-                        <button style={{Width:"36px",height:"36px"}}>A13</button>
-                        <button style={{Width:"36px",height:"36px"}}>A14</button>
-                        <button style={{Width:"36px",height:"36px"}}>A15</button>
-                    </div>
-                    </div>
-                </div>
     </div>
     </div>
 
