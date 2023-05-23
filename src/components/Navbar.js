@@ -27,6 +27,21 @@ const Navbar = () => {
       label: "STORE",
       path: "/store",
       pname: "store"
+    },
+    {
+      label: "BOOKINGS",
+      path: "/bookings",
+      pname: "bookings"
+    },
+    {
+      label: "Login",
+      path: "/login",
+      pname: "login"
+    },
+    {
+      label: "Register",
+      path: "/register",
+      pname: "register"
     }
   ]
 
