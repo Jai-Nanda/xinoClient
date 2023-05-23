@@ -34,12 +34,12 @@ const Navbar = () => {
       pname: "bookings"
     },
     {
-      label: "Login",
+      label: "LOGIN",
       path: "/login",
       pname: "login"
     },
     {
-      label: "Register",
+      label: "REGISTER",
       path: "/register",
       pname: "register"
     }
